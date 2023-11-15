@@ -195,7 +195,7 @@ class Refacer:
         frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
-        fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+        fourcc = cv2.VideoWriter_fourcc(*'h264')
         output = cv2.VideoWriter(output_video_path, fourcc, fps, (frame_width, frame_height))
         
         frames=[]
